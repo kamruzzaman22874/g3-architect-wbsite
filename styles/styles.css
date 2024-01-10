@@ -84,10 +84,10 @@ main {
 }
 
 .features {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .features-title {
@@ -123,6 +123,62 @@ main {
     padding-right: 70px;
 }
 
+.feature-love {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.love-container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.love-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: normal;
+    border-left: 5px solid;
+    border-color: #FF900E;
+}
+
+.border-style {
+    margin-left: 20px;
+}
+
+.love-des {
+    margin: 50px 0;
+    font-weight: 400;
+    color: #727272;
+}
+
+.love-card {
+    width: 80%;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.years {
+    position: relative;
+    bottom: 80px;
+    right: 60px;
+    width: 30%;
+    padding: 30px;
+    color: white;
+    background-color: #FF900E;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.experience {
+    font-size: 18px;
+}
+
 /* Media query */
 
 @media screen and (max-width:576px) {
@@ -130,9 +186,15 @@ main {
         padding: 20px;
     }
 
-    .nav .features {
+    .nav,
+    .features {
         flex-direction: column;
     }
+
+    .features-img {
+        width: full;
+    }
+
 
     .nav-title {
         font-size: 25px;
@@ -149,14 +211,20 @@ main {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
+
+    .features-details {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 960px) {
     header {
         padding: 50px;
     }
 
-    nav {
+    .nav,
+    .features {
         flex-direction: column;
     }
 
@@ -164,4 +232,14 @@ main {
         font-size: 3rem;
 
     }
+
+    .features {
+        margin-top: 20px;
+    }
+
+    .features-details {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
